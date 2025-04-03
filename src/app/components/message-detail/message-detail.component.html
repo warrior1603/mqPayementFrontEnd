@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>Détails du Message</h2>
+<mat-dialog-content>
+  <p><strong>ID:</strong> {{ data.id }}</p>
+  <p><strong>Contenu:</strong> {{ data.content }}</p>
+  <p><strong>Reçu le:</strong> {{ data.receivedAt | date:'full' }}</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="close()">Fermer</button>
+</mat-dialog-actions>
